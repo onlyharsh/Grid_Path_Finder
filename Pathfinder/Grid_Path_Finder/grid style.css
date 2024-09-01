@@ -1,0 +1,134 @@
+* {	
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+html {
+	height : 100%;
+	width: 100%;
+}
+body {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 100vh;
+    grid-gap: 0.2em;
+}
+body {
+  	margin: 0 0;
+ 	max-width: 99vw;  				
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}	
+	
+	
+main {
+	/* background: rgb(255,255,255); */
+	background: radial-gradient(circle, #ffecd2, #fcb69f);
+  	display: flex;
+  	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+aside {
+	/* background:  #90f3f1; */
+	background: linear-gradient(to right, #ffecd2, #fcb69f);
+	color: rgb(0, 0, 0);
+  	display: grid;
+	align-items: top;
+	grid-template-rows : 5vh;
+	justify-content: center;
+}
+.heading{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.heading h1{
+	font-size: x-large;
+	margin-top:0;
+}
+
+#theme1 {
+    margin-left: 0;
+    padding-left: 2rem; 
+}
+#theme2{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#theme-toggle{
+	background-color: transparent;
+	cursor: pointer; 
+	border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+#Instructions{
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 0.2rem 1.4rem;
+}
+#Instructions:hover,
+.Button:hover,
+.control_button:hover,
+.gid_button:hover {
+    cursor: pointer; 
+	box-shadow: 0px 1px 5px black;
+	margin-bottom: 5px;
+}
+#Instructions:hover,
+.Button:hover,
+.control_button:hover,
+.gid_button:click {
+    cursor: pointer; 
+	box-shadow: 0px 1px 5px black;
+	margin-bottom: 5px;
+}
+.Button,
+.gid_button
+{
+	background-color: transparent;
+	display: inline-block;
+	border-radius: 5px;
+	width: 30%;
+	text-align: center;
+	padding-left: 1px;
+}
+.control_button{
+	display: inline-block;
+	border-radius: 5px;
+	width: 32%;
+	top: 230%;
+	padding-right: 10px;
+	border-collapse: separate;
+	border-spacing: 20px;
+	text-align: center;
+}
+.Button,
+.control_button {
+	background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#resetGrid{
+	background-color: transparent;
+}
+
+.box { 
+	border : 1px solid black ;
+	padding : 1vmin 1vmin ;
+	background: rgba(200,200,200,0.2);
+}
+.row {
+	display : flex ;
+	justify-content: center ;
+}
+
